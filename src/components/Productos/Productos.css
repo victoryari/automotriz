@@ -1,0 +1,99 @@
+.productos {
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, #3653d6 0%, #448dec 100%);
+}
+
+.productos-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.productos h2 {
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.productos-descripcion {
+    text-align: center;
+    color: #ecf0f1;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+}
+
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.producto-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.producto-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.producto-imagen {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.producto-card h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.producto-card p {
+    color: #7f8c8d;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.producto-btn {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.producto-btn:hover {
+    background: #c0392b;
+}
+
+@media (max-width: 768px) {
+    .productos {
+        padding: 2rem 1rem;
+    }
+    .productos-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.producto-imagen {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+}
+
+.producto-imagen img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
